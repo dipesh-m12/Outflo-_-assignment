@@ -89,7 +89,9 @@ export default function Home() {
   const [generatedMessage, setGeneratedMessage] = useState("");
   const [copySuccess, setCopySuccess] = useState(false);
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+  const API_URL =
+    process.env.NEXT_PUBLIC_API_URL ||
+    "https://outflo-assignment-two.vercel.app";
 
   // Campaign form
   const campaignForm = useForm({
