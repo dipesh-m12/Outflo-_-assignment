@@ -48,6 +48,10 @@ const asyncHandler = (fn) => (req, res, next) => {
   });
 };
 
+app.get("/", (req, res) => {
+  res.send("OutFlo server running...");
+});
+
 // Campaign CRUD APIs
 app.get(
   "/campaigns",
